@@ -81,15 +81,15 @@
 
 .deg-filters {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 1.5rem 2rem;
   background: var(--gray-50);
   border-radius: 0;
   margin-top: 0;
   flex-wrap: nowrap;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
-  overflow-x: auto;
+  border-bottom: 1px solid #ddd;
 }
 
 .filter-group {
@@ -98,12 +98,13 @@
   gap: 0.5rem;
   min-width: fit-content;
   flex-shrink: 0;
+  align-items: flex-start;
 }
 
 .filter-group label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--gray-700);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -207,7 +208,7 @@
 .deg-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  font-size: 1rem;
   table-layout: fixed;
 }
 
@@ -230,7 +231,7 @@
   text-overflow: ellipsis;
   word-break: normal;
   color: #333;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .deg-table th.sortable {
@@ -251,7 +252,7 @@
 }
 
 .deg-table td {
-  padding: 0.75rem 0.85rem;
+  padding: 1rem 0.85rem;
   border-bottom: 1px solid var(--gray-100);
   word-break: break-word;
   overflow-wrap: break-word;
@@ -337,6 +338,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
 }
 
 .deg-footer {
@@ -344,7 +346,7 @@
   background: var(--gray-50);
   border-top: 1px solid var(--gray-200);
   color: var(--gray-600);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   text-align: right;
   flex-shrink: 0;
   width: 100%;

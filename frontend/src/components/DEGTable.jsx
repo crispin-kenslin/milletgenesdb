@@ -10,7 +10,7 @@ function DEGTable({ cropName, stressType }) {
   const [searchText, setSearchText] = useState('');
 
   // Filter states
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
   const [log2FCThreshold, setLog2FCThreshold] = useState(0);
   const [regulation, setRegulation] = useState('all'); // all, up, down
   const [pValueThreshold, setPValueThreshold] = useState(0.05);
@@ -123,12 +123,6 @@ function DEGTable({ cropName, stressType }) {
             onChange={(e) => setSearchText(e.target.value)}
             className="deg-search"
           />
-          <button
-            className="filter-toggle-btn"
-            onClick={() => setShowFilters(!showFilters)}
-          >
-            ⚙️ {showFilters ? 'Hide' : 'Show'} Filters
-          </button>
         </div>
 
         {showFilters && (
