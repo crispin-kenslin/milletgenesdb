@@ -214,7 +214,7 @@ def get_metabolites_data(crop_slug: str) -> List[Dict[str, Any]]:
     for csv_file in metabolomics_dir.glob("*.csv"):
         if csv_file.name.endswith("metabolites.csv"):
             try:
-                with csv_file.open("r", encoding="utf-8", errors="ignore") as f:
+                with csv_file.open("r", encoding="utf-8-sig", errors="ignore") as f:
                     reader = csv.DictReader(f)
                     for row in reader:
                         results.append(row)
@@ -237,7 +237,7 @@ def get_total_metabolites_count() -> int:
             for csv_file in metabolomics_dir.glob("*.csv"):
                 if csv_file.name.endswith("metabolites.csv"):
                     try:
-                        with csv_file.open("r", encoding="utf-8", errors="ignore") as f:
+                        with csv_file.open("r", encoding="utf-8-sig", errors="ignore") as f:
                             total += sum(1 for _ in f) - 1 # subtract header
                     except Exception as e:
                         pass

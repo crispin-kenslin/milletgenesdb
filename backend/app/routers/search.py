@@ -22,16 +22,12 @@ def _get_all_stress_csvs():
             stress_type = parts[-1] if len(parts) > 1 else csv_file.stem
             yield crop_dir.name, stress_type, csv_file
 
-
 @router.get("/genes")
 def gene_search(
     q: str = Query(..., min_length=2),
     limit: int = Query(500, ge=1, le=5000),
 ):
-    """
-    Search all transcriptomics stress CSVs for gene ID or protein name.
-    Returns: crop, stress, gene_id, log2fc, pvalue, protein.
-    """
+
     q_lower = q.strip().lower()
     results = []
 

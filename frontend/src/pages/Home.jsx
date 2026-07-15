@@ -24,6 +24,8 @@ const CROP_IMAGES = {
   'Proso Millet': `${IMAGE_BASE}/proso_millet.png`,
   'Little Millet': `${IMAGE_BASE}/little_millet.png`,
   'Barnyard Millet': `${IMAGE_BASE}/barnyard_millet.png`,
+  'Kodo Millet': `${IMAGE_BASE}/kodo_millet.png`,
+  
 };
 
 function useCounter(target, duration = 2000) {
@@ -113,11 +115,10 @@ function Home() {
         <div className="hero-inner">
           <p className="hero-subtitle">Welcome to</p>
           <h1 className="hero-title">
-            Minor Millets DataBase
+            MilletGenesDB
           </h1>
           <p className="hero-subtitle">
-            A comprehensive integrative database for the genomic, transcriptomic and metabolomic data for  minor millet species from public databases -
-            accessible in a single platform.
+            A comprehensive integrative database for the genomic, transcriptomic and metabolomic data for minor millet species
           </p>
 
           <div className="hero-stats">

@@ -45,8 +45,8 @@ function Navbar() {
               <img src={logo} alt="MIMI DB" className="navbar-logo" />
             </div>
             <div className="navbar-brand-text">
-              <span className="navbar-brand-title">MIMI DB</span>
-              <span className="navbar-brand-sub"><b>Mi</b>nor <b>Mi</b>llets <b>D</b>ata<b>B</b>ase</span>
+              <span className="navbar-brand-title">MilletGenesDB</span>
+       
             </div>
           </Link>
           <div className="navbar-links">
